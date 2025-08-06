@@ -4,15 +4,15 @@ app:
     notify: appzdev@cloudbourne.co
     
 build:
-    version: 12.2
+    version: 17.1
     env: DEV
     build_file: none
     output_files: output/*.zip
-    image_template: postgres_master-12.2
-    image_name: alpha/postgres_master
+    image_template: postgres_master-17.1
+    image_name: postgres_master
     
 deploy:
-    context: alpha/DEV
+    context: anandp0/DEV
     type: statefulset
     replicas: 1
     port:
