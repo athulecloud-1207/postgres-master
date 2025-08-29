@@ -12,7 +12,7 @@ build:
     image_name: postgres_master
     
 deploy:
-    context: anandp0/DEV
+    context: athulecloud-1207/DEV
     type: statefulset
     replicas: 1
     port:
@@ -46,4 +46,4 @@ properties:
       vault: APPUSER_PASSWORD
     APPZ_RESTORE_TOKEN: 20200810-1217
     APPZ_LOAD_TOKEN: 20200810-1217
-    revision : 12
+    revision : 00
